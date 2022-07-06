@@ -5,6 +5,7 @@ from sqlalchemy.orm import Session
 from models import Knowledge,ExtraRecall
 from environment_variables import username,password,host,port,database
 import json
+print(username,password,host,port,database)
 engine = create_engine(f'mysql+mysqlconnector://{username}:{password}@{host}:{port}/{database}', future=True)
 session = Session(engine)
 stmt = select(Knowledge)

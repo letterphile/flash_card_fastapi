@@ -18,7 +18,7 @@ class Knowledge(Base):
     
 
     def __repr__(self):
-        return f"Knowledge(id={self.id!r}, front={self.question!r}, back={self.answer!r})"
+        return f"Knowledge(id={self.id!r}, front={self.front!r}, back={self.back!r})"
 
 class ExtraRecall(Base):
     __tablename__ = "recall"
